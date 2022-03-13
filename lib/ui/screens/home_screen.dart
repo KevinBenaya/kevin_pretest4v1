@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     color: Theme.of(context).backgroundColor,
                                   ),
                                   child: SvgPicture.asset(
-                                      'assets/images/icon_qrcode.svg'),
+                                      'assets/images/qr-code.svg'),
                                 ),
                               ],
                             ),
