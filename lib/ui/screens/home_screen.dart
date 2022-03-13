@@ -33,8 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.only(right: 24),
                 child: CircleAvatar(
                   child: ClipOval(
-                    child: Image.network(
-                        'https://www.google.com/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1270661398540898305%2F-zF5jVqt_400x400.jpg&imgrefurl=https%3A%2F%2Ftwitter.com%2Fkevinbenaya2&tbnid=YjmzhKSDjcT5-M&vet=12ahUKEwjN9oHDqsL2AhVrjNgFHQWrCj0QMygBegQIARA2..i&docid=D_N3_HhSOcY4mM&w=400&h=400&itg=1&q=kevin%20benaya&ved=2ahUKEwjN9oHDqsL2AhVrjNgFHQWrCj0QMygBegQIARA2'),
+                    child: Image.asset('assets/images/kevin.jpg'),
                   ),
                 ),
               ),
