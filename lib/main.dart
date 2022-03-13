@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kevin_pretest4v1/ui/screens/screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -76,7 +77,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const Scaffold(),
+      home: const HomeScreen(),
     );
   }
 }
