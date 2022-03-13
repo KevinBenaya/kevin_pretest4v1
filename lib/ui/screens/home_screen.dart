@@ -140,6 +140,87 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate((_, int index) {
+              return Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                child: Container(
+                  height: 174,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    color: Theme.of(context).backgroundColor,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Theme.of(context).shadowColor,
+                        spreadRadius: 0,
+                        blurRadius: 10,
+                        offset: const Offset(0, 0),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            '00359007738060313786',
+                            style: Theme.of(context).textTheme.headline5,
+                          ),
+                          Container(
+                            height: 31,
+                            width: 78,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage(''),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'In transit',
+                            style: Theme.of(context).textTheme.headline4,
+                          ),
+                          Text(
+                            'Last update: 3 hours ago',
+                            style: Theme.of(context).textTheme.headline6,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        width: 60,
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'Details',
+                                  style: Theme.of(context).textTheme.bodyText2,
+                                ),
+                                SvgPicture.asset(''),
+                              ],
+                            ),
+                            Container(
+                              height: 1,
+                              color: Colors.black,
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              );
+            }),
+          ),
         ],
       ),
       bottomNavigationBar: const MyBottomNavigationBar(),
