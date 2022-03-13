@@ -189,9 +189,28 @@ class _HomeScreenState extends State<HomeScreen> {
                             'In transit',
                             style: Theme.of(context).textTheme.headline4,
                           ),
+                          const SizedBox(
+                            height: 3,
+                          ),
                           Text(
                             'Last update: 3 hours ago',
                             style: Theme.of(context).textTheme.headline6,
+                          ),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          Container(
+                            height: 5,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(2.5),
+                              child: LinearProgressIndicator(
+                                value: 0.7,
+                                color: Theme.of(context)
+                                    .appBarTheme
+                                    .backgroundColor,
+                                backgroundColor: Color(0xFFF8F8F8),
+                              ),
+                            ),
                           ),
                         ],
                       ),
