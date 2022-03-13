@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:kevin_pretest4v1/ui/screens/widgets/my_bottom_navigation_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -116,8 +117,32 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
+          const SliverPadding(
+            padding: const EdgeInsets.only(
+              top: 32,
+            ),
+          ),
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 24),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'My parcels',
+                        style: Theme.of(context).textTheme.headline3,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
+      bottomNavigationBar: const MyBottomNavigationBar(),
     );
   }
 }
