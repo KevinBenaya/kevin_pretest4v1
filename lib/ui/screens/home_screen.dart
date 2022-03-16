@@ -175,7 +175,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             width: 78,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: NetworkImage(''),
+                                image: NetworkImage(
+                                    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Famazon-png-logo-vector&psig=AOvVaw3aCSjJ-3MMrk3MHv6tNp0j&ust=1647518187267000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiz8tfJyvYCFQAAAAAdAAAAABAD'),
                               ),
                             ),
                           ),
@@ -198,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 12,
                           ),
-                          Container(
+                          SizedBox(
                             height: 5,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(2.5),
